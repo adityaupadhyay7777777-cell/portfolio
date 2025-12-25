@@ -40,7 +40,7 @@ body {
     font-weight: bold;
     background-color: rgb(147, 60, 227);
     color: white;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     animation-name: button1;
     animation-duration: 0.5s;
@@ -60,37 +60,35 @@ body {
 }
 
 .button1:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
     transition: all 0.3s;
 }
 
 .name {
-    color: rgb(79, 78, 78);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
     font-weight: 900;
-    font-size: xx-large;
+    font-size: x-large;
     width: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:cursive;
+    text-align: center;
+    transition: all 0.2s;
     animation-name: title;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 @keyframes title {
     from {
-        color: rgb(79, 78, 78);
-        position: relative;
-        left: 5px;
-        top: 5px;
+        color: rgb(17, 17, 17);
     }
 
     to {
-        color: rgb(121, 43, 194);
-        position: relative;
-        left: 10px;
-        top: 10px;
+        color: rgb(247, 7, 7);
         transform: scale(1.10);
         transition: all 0.3s;
+        word-break: break-all;
     }
 }
 
