@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio 2.0</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts.googleapis.com">
+
+
 </head>
 
 <body>
@@ -15,23 +19,29 @@
             <a href="#" rel="noopener noreferrer">
                 <div class="box">Home </div>
             </a>
-            <a href="#about" rel="noopener noreferrer">
-                <div class="box">About </div>
+            <a id="linkedin" href="https://www.linkedin.com/in/aditya-upadhyay-b88590262" target="_blank"
+                aria-label="Visit my LinkedIn profile">
+                <i class="fa fa-linkedin-square" style="font-size:30px; color:#0077B5;"></i>
             </a>
+
             <a href="https://adityaupadhyay7777777-cell.github.io/CSS-project/" target="_blank">
-                <div class="box">portfolio </div>
+                <div class="box">Portfolio </div>
             </a>
-            <a href="#contact" rel="noopener noreferrer">
-                <div class="box">Contact</div>
+            <a id="gmail" href="mailto:adityaupadhyay7777777@gmail.com" target="_blank" rel="noopener noreferrer">
+                <span>&#9993;</span>
             </a>
 
             <!-- certificate dropdown -->
             <div class="opener">
-                <button class="button1">Certificates <span class="arrow">▼</span></button>
+                <button class="button1">Certificates</button>
                 <div id="pdf">
                     <ul>
-                    <a href="certificate 1.pdf" target="_blank"><li>Certificate 1</li></a>
-                    <a href="certificate 2.jpg" target="_blank"><li>Certificate 2</li></a>
+                        <a href="certificate 1.pdf" target="_blank">
+                            <li>Certificate 1</li>
+                        </a>
+                        <a href="certificate 2.jpg" target="_blank">
+                            <li>Certificate 2</li>
+                        </a>
                     </ul>
                 </div>
             </div>
@@ -51,14 +61,20 @@
                 <h3>Next:-Data Science</h3>
                 <br>
                 <div class="bottom button">
-                    <a href="#" rel="noopener noreferrer" style="text-decoration: none;" target="_blank"><button
+                    <a href="https://adityaupadhyay7777777-cell.github.io/javascript-projects.../"
+                        rel="noopener noreferrer" style="text-decoration: none;" target="_blank"><button
                             class="b1">Projects</button></a>
+
                     <a href="https://github.com/adityaupadhyay7777777-cell?tab=repositories" rel="noopener noreferrer"
                         style="text-decoration: none;" target="_blank"><button class="b2">More me</button></a>
                 </div>
             </section>
             <section class="image">
-                <img src="certificate.jpg" alt="image">
+                <img class="image1" src="Mern-Stack.png" alt="image1">
+                <img class="image2" src="html.png" alt="image2">
+                <img class="image3" src="css.png" alt="image3">
+                <img class="image4" src="js.png" alt="image4">
+                <img class="image5" src="python.png" alt="image5">
             </section>
         </main>
     </div>
@@ -73,7 +89,7 @@
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
             pdfDiv.style.display = pdfDiv.style.display === 'none' || pdfDiv.style.display === '' ? 'block' : 'none';
-            btn.classList.toggle('active');
+
         });
 
         // Close dropdown when clicking outside
