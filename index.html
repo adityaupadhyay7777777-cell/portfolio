@@ -1,10 +1,10 @@
-<!DOCTYpE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>portfolio 2.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,14 +12,32 @@
     <div class="container">
         <div class="navbar">
             <div class="name">CODE DIL <span class="dil">&hearts;</span> </div>
-            <div class="box">Home </div>
-            <div class="box">About </div>
-            <div class="box">portfolio </div>
-            <div class="box">Contact</div>
-            <button class="button1">Certicates</button>
+            <a href="#" rel="noopener noreferrer">
+                <div class="box">Home </div>
+            </a>
+            <a href="#about" rel="noopener noreferrer">
+                <div class="box">About </div>
+            </a>
+            <a href="https://adityaupadhyay7777777-cell.github.io/CSS-project/" target="_blank">
+                <div class="box">portfolio </div>
+            </a>
+            <a href="#contact" rel="noopener noreferrer">
+                <div class="box">Contact</div>
+            </a>
+
+            <!-- certificate dropdown -->
+            <div class="opener">
+                <button class="button1">Certificates <span class="arrow">▼</span></button>
+                <div id="pdf">
+                    <ul>
+                    <a href="certificate 1.pdf" target="_blank"><li>Certificate 1</li></a>
+                    <a href="certificate 2.jpg" target="_blank"><li>Certificate 2</li></a>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="hero">
-            <section class="content">
+        <main class="hero">
+            <section class="content" id="about">
                 <h1 class="heading">Hi, I'm Aditya Upadhyay!</h1>
                 <div class="passion">
                     <span id="id1">WEB </span>
@@ -27,27 +45,47 @@
                 </div>
 
                 <p class="paragraph">I am a B.Tech CSE student currently learning from Harry Sir (Code With Harry)
-                    through his official website portal.I would also suggest you to join Harry Sir’s courses to get updated
+                    through his official website portal.I would also suggest you to join Harry Sir's courses to get
+                    updated
                     knowledge about the IT field...</p>
+                <h3>Next:-Data Science</h3>
+                <br>
                 <div class="bottom button">
-                    <button class="b1">Projects</button>
-                    <button class="b2">More me</button>
+                    <a href="#" rel="noopener noreferrer" style="text-decoration: none;" target="_blank"><button
+                            class="b1">Projects</button></a>
+                    <a href="https://github.com/adityaupadhyay7777777-cell?tab=repositories" rel="noopener noreferrer"
+                        style="text-decoration: none;" target="_blank"><button class="b2">More me</button></a>
                 </div>
             </section>
             <section class="image">
                 <img src="certificate.jpg" alt="image">
-
             </section>
-
-        </div>
-
+        </main>
     </div>
     <footer class="footer">
-
         <span id="p1">CODEGEN</span>
         <span id="p2">WEB</span>
-
     </footer>
+    <script>
+        const btn = document.querySelector('.button1');
+        const pdfDiv = document.getElementById('pdf');
+
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            pdfDiv.style.display = pdfDiv.style.display === 'none' || pdfDiv.style.display === '' ? 'block' : 'none';
+            btn.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => {
+            pdfDiv.style.display = 'none';
+        });
+
+        // Prevent closing when clicking inside the dropdown
+        pdfDiv.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    </script>
 </body>
 
 </html>
