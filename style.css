@@ -434,15 +434,15 @@ a:hover {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        padding-left: 46px;
+        padding-left: 40px;
         padding-right: 40px;
         justify-content: center;
         align-items: center;
         width: 90%;
         height: 90vh;
         position: relative;
-        top: 0px;
-        left: 88px;
+        top: 20px;
+        /* left: 88px; */
         gap: 40px;
 
     }
