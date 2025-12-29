@@ -428,6 +428,7 @@ a:hover {
         align-items: center;
         width: 100vw;
         height: 100vh;
+        position: relative;
     }
 
     .container {
@@ -440,9 +441,8 @@ a:hover {
         align-items: center;
         width: 90%;
         height: 90vh;
-        position: relative;
-        top: 20px;
-        /* left: 88px; */
+        position: absolute;
+        top:100px;
         gap: 40px;
 
     }
