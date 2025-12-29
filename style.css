@@ -207,8 +207,8 @@ a{
 }
 
 .bottom button {
-    padding: 3px 25px;
-    border: 2px solid purple;
+    padding: 3px 20px;
+    border: 3px solid purple;
     color: purple;
     cursor: pointer;
     display: flex;
@@ -221,7 +221,6 @@ a{
     color: white;
     transform: scale(1.10);
     transition: all 0.2s;
-
 }
 
 .b2:hover {
@@ -365,6 +364,8 @@ a:hover{
     position: relative;
     right: 40px;
     text-decoration: none;
+    cursor: pointer;
+    /* position: static; */
 }
 #gmail:hover{
     transform: scale(1.15);
@@ -376,4 +377,24 @@ a:hover{
 #linkedin:hover{
     transform: scale(1.15);
     transition: all 0.1s;
+}
+.address{
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top:40px;
+    left:-180px;
+    background-color: rgb(219, 245, 245);
+}
+.dd{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    position: relative;
+
 }

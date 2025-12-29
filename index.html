@@ -7,8 +7,6 @@
     <title>portfolio 2.0</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="fonts.googleapis.com">
-
 
 </head>
 
@@ -27,9 +25,12 @@
             <a href="https://adityaupadhyay7777777-cell.github.io/CSS-project/" target="_blank">
                 <div class="box">Portfolio </div>
             </a>
-            <a id="gmail" href="mailto:adityaupadhyay7777777@gmail.com" target="_blank" rel="noopener noreferrer">
-                <span>&#9993;</span>
-            </a>
+            <div class="dd">
+                <a id="gmail">
+                    <span>&#9993;</span>
+                </a>
+                <div class="address">adityaupadhyay7777777@gmail.com</div>
+            </div>
 
             <!-- certificate dropdown -->
             <div class="opener">
@@ -61,12 +62,13 @@
                 <h3>Next:-Data Science</h3>
                 <br>
                 <div class="bottom button">
-                    <a href="https://adityaupadhyay7777777-cell.github.io/javascript-projects.../"
-                        rel="noopener noreferrer" style="text-decoration: none;" target="_blank"><button
-                            class="b1">Projects</button></a>
+                    <button class="b1"><a href="https://adityaupadhyay7777777-cell.github.io/javascript-projects.../"
+                            rel="noopener noreferrer" style="text-decoration: none;" target="_blank"
+                            >Projects</a></button>
 
-                    <a href="https://github.com/adityaupadhyay7777777-cell?tab=repositories" rel="noopener noreferrer"
-                        style="text-decoration: none;" target="_blank"><button class="b2">More me</button></a>
+                    <button class="b2"> <a href="https://github.com/adityaupadhyay7777777-cell?tab=repositories"
+                            rel="noopener noreferrer" style="text-decoration: none;" target="_blank">More
+                            me</a></button>
                 </div>
             </section>
             <section class="image">
@@ -85,6 +87,8 @@
     <script>
         const btn = document.querySelector('.button1');
         const pdfDiv = document.getElementById('pdf');
+        const gmail = document.getElementById('gmail');
+        const address = document.querySelector('.address');
 
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -95,10 +99,26 @@
         // Close dropdown when clicking outside
         document.addEventListener('click', () => {
             pdfDiv.style.display = 'none';
+            address.style.display = 'none';
         });
 
         // Prevent closing when clicking inside the dropdown
         pdfDiv.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+        gmail.addEventListener('click', () => {
+            if (address.style.display === 'none' || address.style.display === '') {
+                address.style.display = 'block';
+            } else {
+                address.style.display = 'none';
+            }
+        });
+
+        gmail.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        address.addEventListener('click', (e) => {
             e.stopPropagation();
         });
     </script>
