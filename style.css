@@ -434,6 +434,7 @@ a:hover {
     .container {
         display: flex;
         flex-direction: column;
+        padding-top: -20px;
         padding-bottom: 50px;
         padding-left: 35px;
         padding-right: 25px;
@@ -444,7 +445,7 @@ a:hover {
         position: absolute;
         top:20px;
         gap: 130px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
     }
 
