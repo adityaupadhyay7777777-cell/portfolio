@@ -434,7 +434,7 @@ a:hover {
     .container {
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding-bottom: 50px;
         padding-left: 35px;
         padding-right: 25px;
         justify-content: center;
@@ -458,7 +458,7 @@ a:hover {
         font-size: small;
     }
     .dd .address{
-        left: -99px;
+        left: -102px;
         top: -20px;
     }
     .opener ul{
@@ -474,6 +474,7 @@ a:hover {
         align-items: center;
         align-self: center;
         position: absolute;
+        gap:5px;
     }
 
     .heading {
@@ -525,7 +526,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         position: relative;
-        left: 0px;
+        left: -5px;
     }
 
     img {
