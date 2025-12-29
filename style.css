@@ -478,19 +478,19 @@ a:hover {
 
     .heading {
         align-self: center;
-        font-size: smaller;
-        width: 300px;
+        /* font-size: smaller; */
+        /* width: 300px; */
 
     }
 
     .passion #id1 {
         align-self: center;
-        font-size: smaller;
+        /* font-size: smaller; */
 
     }
     .passion #id2{
         align-self: center;
-        font-size: small;
+        /* font-size: small; */
 
 
     }
