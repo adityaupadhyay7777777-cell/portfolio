@@ -438,7 +438,8 @@ a:hover {
         padding-right: 40px;
         justify-content: center;
         align-items: center;
-        width: 131%;
+        width: 90%;
+        height: 90vh;
         position: relative;
         top: 0px;
         left: 88px;
