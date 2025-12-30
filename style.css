@@ -433,7 +433,7 @@ a:hover {
     .container {
         display: flex;
         flex-direction: column;
-        padding-bottom: 80px;
+        padding-bottom: 70px;
         padding-left: 35px;
         padding-right: 25px;
         justify-content: center;
@@ -443,7 +443,7 @@ a:hover {
         position: absolute;
         top:20px;
         gap: 130px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
 
     }
 
@@ -452,6 +452,8 @@ a:hover {
         flex-direction: column;
         gap: 0px;
         font-size: smaller;
+        position: relative;
+        top:-25px;
     }
     .navbar a{
         font-size: small;
